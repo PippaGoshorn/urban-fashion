@@ -1,0 +1,173 @@
+/* * {
+    border: solid 1px orange;
+} */
+
+.page-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1600px;
+}
+
+body {
+    background-image: url(./img/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(49, 49, 105);
+}
+
+/* Background image scaling big */
+.background-image {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0 0 0 10rem;
+}
+
+nav ul li {
+    display: flex;
+    font-size: 1.75rem;
+    margin: 0 2rem 0 2rem;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 10rem;
+}
+
+.navbar nav {
+    list-style: none;
+    display: inline-flex;
+}
+
+.navbar .menu {
+    display: flex;
+    justify-items: start;
+}
+
+.hero-section {
+    padding-left: 10rem;
+    position: relative;
+    height: 1300px;
+}
+
+.hero-text {
+    font-size: 2rem;
+}
+
+.hero-text p {
+    margin: 0 0 50px 0;
+}
+
+.arrow-buttons {
+    width: 60px;
+    height: 60px;
+    padding: 3rem;
+    margin: 0 5rem 0 3rem;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.collections-button {
+    width: 250px;
+    height: 60px;
+    border-radius: 10%;
+    border-color: pink;
+    background-image: linear-gradient(to right, rgb(156, 108, 235), pink);
+    color: white;
+    font-size: 1.75rem;
+}
+
+.hero-section-wrapper {
+    position: relative;
+}
+
+/* Issue: moving to left as page gets wider.. */
+.social {
+    display:flex;
+    transform: rotate(-90deg);
+    align-items: center;
+    justify-content: start;
+    position: fixed;
+    top: 900px;
+    left: 250px;
+}
+
+.social-icon {
+    transform: rotate(90deg);
+    margin: 10%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .hero-section-wrapper {
+        width: 1200px;
+    }
+}
+
+.categories-header {
+    background-color: rgb(236, 223, 246);
+    height: 100px;
+    padding-bottom: 2%;
+}   
+
+.categories-header h1 {
+    display: flex;
+    align-content: center;
+    padding-left: 4%;
+    padding-top: 3%;
+    font-size: 2.75rem;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 175px;
+    justify-content: center;
+    font-size: 1.5rem;
+    background-color: rgb(236, 223, 246);
+    padding-top: 2%;
+}
+
+.categories .knitwear {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end 4;
+}
+
+.categories .dresses  {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end 4;
+}
+
+.categories .accessories  {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end 4;
+}
+
+.categories img {
+    width: 100%;
+    height: 260px;
+}
